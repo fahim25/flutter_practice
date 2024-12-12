@@ -1,3 +1,4 @@
+import 'package:first_app/dice_roller.dart';
 import 'package:first_app/welcome_message.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +11,11 @@ const endGradient = Alignment.bottomRight;
 //for widgets
 class GradientContainer extends StatelessWidget {
   const GradientContainer(this.outputColors, {super.key});
+  // const GradientContainer(this.outputColors, {super.key});
+
   //can take the colors one by one, like string
+
+  // const GradientContainer.purple({super.key})
 
   final List<Color> outputColors;
 
@@ -27,7 +32,8 @@ class GradientContainer extends StatelessWidget {
         ),
       ),
       child: const Center(
-        child: WelcomeMessage("Hello From othe component"),
+        // child: WelcomeMessage("Hello From othe component"),
+        child: DiceRoller(),
       ),
     );
 
